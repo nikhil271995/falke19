@@ -2690,3 +2690,16 @@
 						}
 
 	}
+	block {
+    height: 100%;
+    box-sizing: border-box; /* One of my CSS3-favourites */
+	}
+
+	/* Specifics */
+	#block1 {
+	padding: 20px;
+	}
+	    #block1 section {
+	line-height: 200%;
+	margin-top: 400px;
+	}
