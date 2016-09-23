@@ -12,6 +12,10 @@ var commentsSchema = new Schema({
 	comments : {
 		type :String,
 		required: true
+	},
+	number :{
+		type : Number,
+		required :true
 	}
 });
 module.exports = mongoose.model('comments', commentsSchema);

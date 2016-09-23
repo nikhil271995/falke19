@@ -11,12 +11,13 @@ router.get('/artists/djfalke19', function(req, res, next) {
   res.render('artists/djfalke19/index', { title: 'RadioCapriccio' });
 });
 
-router.post('/artists/djfalke19', function(req, res, next) {
+router.post('/message', function(req, res, next) {
 		  // Database Entry
 	  var comment = new comments({
   			name : req.body.name,
 			email : req.body.email,
-			comments : req.body.message
+			comments : req.body.message,
+			number : req.body.phone
 	  });
 		  comment.save(function(err, comment) {
 		  	if (err){
